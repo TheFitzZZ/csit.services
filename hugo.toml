@@ -1,0 +1,164 @@
+baseURL = "/"
+#baseURL = 'http://localhost:1313/'
+
+
+languageCode = 'de-de'
+defaultContentLanguage = "de"
+
+title = 'Christoph Süßer IT Dienstleistungen'
+
+paginate = "7"
+theme = "spectral"
+#googleAnalytics = "G-XXXXXXXXXX"
+
+[params]
+fancyTitle = 'Christoph Süßer <br /><img src="/images/cslogo.png" alt="CS Logo" style="width:25%; margin-top:15px;"> <br />IT Dienstleistungen'
+copyright = "Christoph Süßer"
+description = 'Lösungen für ausgewählte Kunden.'
+#startbuttonText = "Activate"
+#startbuttonLink = "#"
+body_is_markdown = true
+#custom_css = "foo.css"
+#custom_sass = "bar.scss"
+#images = ["path_to_social_image_for_link_previews.jpg"]
+
+[[params.menu.main]]
+url = '/'
+title = "Start"
+
+[[params.menu.main]]
+url = '/impressum/'
+title = "Impressum"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    series = "series"
+
+[params.one]
+enable = true
+title = 'Klare Lösungen<br />Für komplexe Probleme'
+body = '''
+Qualitätsanspruch, enger Kundenkontakt und klare Dokumentation.  
+
+'''
+
+[[params.one.icon]]
+icon = "fa-gem"
+style = "1"
+label = "Qualität"
+
+[[params.one.icon]]
+icon = "fa-heart"
+style = "2"
+label = "Kundenkontakt"
+
+[[params.one.icon]]
+icon = "solid fa-code"
+style = "3"
+label = "As Code Mentalität"
+
+[params.two]
+enable = false
+
+[[params.two.section]]
+img = "img/pic01.jpg"
+img_alt = "blurry background: white/grey"
+title = 'Magna primis lobortis<br />sed ullamcorper'
+body = 'Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.'
+
+[[params.two.section]]
+img = "img/pic02.jpg"
+title = 'Tortor dolore feugiat<br />elementum magna'
+body = 'Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.'
+
+[[params.two.section]]
+img = "img/pic03.jpg"
+title = 'Magna primis lobortis<br />sed ullamcorper'
+body = 'Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.'
+
+[params.three]
+enable = false
+title = 'Accumsan mus tortor nunc aliquet'
+body = '''
+Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend  
+fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
+'''
+
+[[params.three.feature]]
+icon = "fa-paper-plane"
+title = "Arcu accumsan"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "solid fa-laptop"
+title = "Ac Augue Eget"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "solid fa-code"
+title = "Foo bar"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "solid fa-headphones-alt"
+title = "Baz kram"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "fa-heart"
+title = "Some latin text"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[[params.three.feature]]
+icon = "fa-flag"
+title = "Nothing important"
+body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+
+[params.cta]
+enable = true
+title = "Kontaktieren Sie mich"
+body = "Sie können mir eine E-Mail senden, um Anfragen zu stellen, oder Teams nutzen, um direkt mit mir in Kontakt zu treten."
+
+[[params.cta.link]]
+href = "mailto:anfrage@csit.services"
+text = "E-Mail"
+special = true
+
+[[params.cta.link]]
+href = "https://teams.microsoft.com/l/chat/0/0?users=christoph@csit.services"
+text = "Teams Chat"
+special = false
+
+[params.contact]
+enable = false
+title = "Kontakt"
+body = "Senden Sie mir eine Nachricht."
+#phone = "+49 (0) 030 000 000"
+#address = "1234 Somewhere Road<br />Some Place, Some State 0000<br />Some Country"
+email = "anfrage@csit.services"
+subject = "Kontaktanfrage - CSIT Dienstleistungen"
+#formspree_form_id = "example_invalid"
+
+[params.social]
+twitter = ""
+mastodon = ""
+github = ""
+facebook = ""
+youtube = ""
+instagram = ""
+dribble = ""
+
+# language specific options
+
+[languages.en]
+weight = 0
+languageName = "English"
+
+[languages.de]
+weight = 10
+languageName = "Deutsch"
+
+[languages.es]
+weight = 10
+languageName = "Español"
