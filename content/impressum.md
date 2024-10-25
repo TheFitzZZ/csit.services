@@ -1,15 +1,14 @@
-# Impressum
-Christoph Süßer IT Dienstleistungen  
-  
+## Impressum
+## Christoph Süßer IT Dienstleistungen
 
-![Beispielbild](https://example.com/beispielbild.jpg)
+
 
 ## Kontakt
-Telefon: +49 (0) 123 44 55 66  
-E-Mail: 
+![Beispielbild](https://example.com/beispielbild.jpg)  
+
 ## Umsatzsteuer-ID
-Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
-D
+Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:  
+![Beispielbild](https://example.com/beispielbild.jpg)  
 
 ## EU-Streitschlichtung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:  
