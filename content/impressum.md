@@ -4,11 +4,11 @@
 
 
 ## Kontakt
-![Beispielbild](https://example.com/beispielbild.jpg)  
+![Impressum anti-crawler anti-spam](/img/impressum.png)  
 
 ## Umsatzsteuer-ID
 Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:  
-![Beispielbild](https://example.com/beispielbild.jpg)  
+![UstID anti-crawler anti-spam](/img/ustid.png)  
 
 ## EU-Streitschlichtung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:  
