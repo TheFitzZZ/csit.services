@@ -64,6 +64,10 @@ jobs:
       #   run: cp -r $./static/img ./public/img/
       # - name: Ls3
       #   run: ls ./content
+
+      - name: Update footer.html
+        run: |
+          sed -i '34s|.*|              <li>&copy; {{ now.Year }} {{.Site.Params.copyright | safeHTML }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li><a href="/impressum">Impressum</a></li>|' ./public/themes/spectral/layouts/partials/footer.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
