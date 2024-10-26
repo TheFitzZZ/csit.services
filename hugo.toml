@@ -12,7 +12,7 @@ theme = "spectral"
 #googleAnalytics = "G-XXXXXXXXXX"
 
 [params]
-fancyTitle = 'Christoph Süßer <br /><img src="/images/cslogo.png" alt="CS Logo" style="width:25%; margin-top:15px;"> <br />IT Dienstleistungen'
+fancyTitle = 'Christoph Süßer <br /><img src="/img/cslogo.png" alt="CS Logo" style="width:25%; margin-top:15px;"> <br />IT Dienstleistungen'
 copyright = "Christoph Süßer"
 description = 'Lösungen für ausgewählte Kunden.'
 #startbuttonText = "Activate"
