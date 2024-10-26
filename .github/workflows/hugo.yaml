@@ -60,10 +60,10 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
-      - name: Copy images
-        run: cp -r $./content/images ./public/img/
+      # - name: Copy images
+      #   run: cp -r $./content/images ./public/img/
       - name: Ls3
-        run: ls .
+        run: ls ./content
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
