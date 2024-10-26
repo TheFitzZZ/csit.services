@@ -60,8 +60,8 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
-      # - name: Copy images
-      #   run: cp -r $./content/images ./public/img/
+      - name: Copy images
+        run: cp -r $./static/img ./public/img/
       - name: Ls3
         run: ls ./content
       - name: Upload artifact
