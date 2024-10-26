@@ -50,6 +50,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Ls3
+        run: ls .
+      - name: Update footer.html
+        run: |
+          sed -i '34s|.*|              <li>&copy; {{ now.Year }} {{.Site.Params.copyright | safeHTML }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li><a href="/impressum">Impressum</a></li>|' ./public/themes/spectral/layouts/partials/footer.html
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -60,14 +65,6 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
-      # - name: Copy images
-      #   run: cp -r $./static/img ./public/img/
-      # - name: Ls3
-      #   run: ls ./content
-
-      - name: Update footer.html
-        run: |
-          sed -i '34s|.*|              <li>&copy; {{ now.Year }} {{.Site.Params.copyright | safeHTML }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li><a href="/impressum">Impressum</a></li>|' ./public/themes/spectral/layouts/partials/footer.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
