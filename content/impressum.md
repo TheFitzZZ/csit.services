@@ -4,11 +4,15 @@
 
 
 ## Kontakt
-![Impressum anti-crawler anti-spam](/img/impressum.png)  
+Online-Impressum.de   
+Kunde: Christoph Süßer IT Dienstleistungen   
+Europaring 90   
+53757 Sankt Augustin   
+angebot@csit.services  
+Tel: +49 15678755803  
 
 ## Umsatzsteuer-ID
-Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:  
-![UstID anti-crawler anti-spam](/img/ustid.png)  
+Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE353637037  
 
 ## EU-Streitschlichtung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:  
