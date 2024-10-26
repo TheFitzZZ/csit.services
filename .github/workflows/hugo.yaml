@@ -52,9 +52,9 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Ls3
         run: ls .
-      - name: Update footer.html
+      - name: copy footer.html
         run: |
-          sed -i '34s|.*|              <li>&copy; {{ now.Year }} {{.Site.Params.copyright | safeHTML }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li><a href="/impressum">Impressum</a></li>|' ./public/themes/spectral/layouts/partials/footer.html
+            cp -f ./footer.html ./themes/spectral/layouts/partials/footer.html
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
