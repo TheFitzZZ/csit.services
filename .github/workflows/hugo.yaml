@@ -61,7 +61,7 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Copy images
-        run: cp -r content/images public/img/
+        run: cp -r ${{ runner.temp }}/hugo_cache/content/images ./public/img/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
