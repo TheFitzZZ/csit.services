@@ -4,8 +4,8 @@
 
 
 ### Kontakt
-Online-Impressum.de  
-Kunde: Christoph Süßer IT Dienstleistungen  
+Christoph Süßer IT Dienstleistungen  
+c/o Online-Impressum.de
 Europaring 90  
 53757 Sankt Augustin  
 anfrage@csit.services  
