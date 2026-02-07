@@ -1,0 +1,5 @@
+# robots.txt – csit.services
+User-agent: *
+Allow: /
+
+Sitemap: https://csit.services/sitemap.xml
