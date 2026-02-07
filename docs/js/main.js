@@ -19,18 +19,40 @@
   const menuToggle = document.querySelector('.menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav');
   const mobileClose = document.querySelector('.mobile-nav-close');
+  let lastFocusedElement = null;
 
-  function openMobileNav() {
-    if (mobileNav) {
-      mobileNav.classList.add('open');
-      document.body.style.overflow = 'hidden';
+  function setMobileNavState(isOpen) {
+    if (!mobileNav) return;
+
+    mobileNav.classList.toggle('open', isOpen);
+    mobileNav.setAttribute('aria-hidden', String(!isOpen));
+    if (isOpen) {
+      mobileNav.removeAttribute('hidden');
+    } else {
+      mobileNav.setAttribute('hidden', '');
+    }
+
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', String(isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+
+    if (isOpen) {
+      lastFocusedElement = document.activeElement;
+      const focusTarget = mobileClose || mobileNav.querySelector('a');
+      if (focusTarget) {
+        window.requestAnimationFrame(function () {
+          focusTarget.focus();
+        });
+      }
+    } else if (lastFocusedElement && lastFocusedElement.focus) {
+      lastFocusedElement.focus();
     }
   }
+
+  function openMobileNav() {
+    setMobileNavState(true);
+  }
   function closeMobileNav() {
-    if (mobileNav) {
-      mobileNav.classList.remove('open');
-      document.body.style.overflow = '';
-    }
+    setMobileNavState(false);
   }
 
   if (menuToggle) menuToggle.addEventListener('click', openMobileNav);

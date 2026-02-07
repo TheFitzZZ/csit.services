@@ -39,14 +39,14 @@
         <a href="/impressum/">Impressum</a>
       </nav>
 
-      <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+      <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
         <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
   </header>
 
   <!-- Mobile overlay nav -->
-  <div class="mobile-nav" role="dialog" aria-label="Mobile Navigation">
+  <div id="mobile-nav" class="mobile-nav" role="dialog" aria-label="Mobile Navigation" aria-modal="true" aria-hidden="true" hidden>
     <button class="mobile-nav-close" aria-label="Menü schließen">
       <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
