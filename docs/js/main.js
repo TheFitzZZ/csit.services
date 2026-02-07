@@ -20,9 +20,12 @@
   const mobileNav = document.querySelector('.mobile-nav');
   const mobileClose = document.querySelector('.mobile-nav-close');
   let lastFocusedElement = null;
+  let isMobileNavOpen = false;
 
   function setMobileNavState(isOpen) {
     if (!mobileNav) return;
+
+    isMobileNavOpen = isOpen;
 
     mobileNav.classList.toggle('open', isOpen);
     mobileNav.setAttribute('aria-hidden', String(!isOpen));
@@ -63,7 +66,27 @@
     });
   }
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeMobileNav();
+    if (e.key === 'Escape') {
+      closeMobileNav();
+      return;
+    }
+
+    if (!isMobileNavOpen || e.key !== 'Tab' || !mobileNav) return;
+
+    const focusable = mobileNav.querySelectorAll(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+    if (!focusable.length) return;
+
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
   });
 
   // ---- Smooth scroll for anchor links ----
