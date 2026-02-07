@@ -437,18 +437,69 @@ section {
 
 .about-content {
   max-width: 720px;
-  margin: 0 auto;
+  margin: 0 auto 3.5rem;
   text-align: center;
 }
 
+.about-content h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  margin-bottom: 1.25rem;
+}
+
 .about-content p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--clr-text-muted);
   line-height: 1.8;
 }
 
 .about-content p + p {
   margin-top: 1.25rem;
+}
+
+/* Stats row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .5rem;
+  padding: 2rem 1.25rem;
+  background: var(--clr-card);
+  border: 1px solid var(--clr-card-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.stat-item:hover {
+  border-color: rgba(34,211,238,.2);
+  transform: translateY(-2px);
+}
+
+.stat-icon {
+  font-size: 1.3rem;
+  color: var(--clr-accent);
+  margin-bottom: .25rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-heading);
+  letter-spacing: -.01em;
+}
+
+.stat-desc {
+  font-size: .85rem;
+  color: var(--clr-text-muted);
+  line-height: 1.5;
 }
 
 /* --- CTA Section --- */
@@ -698,7 +749,7 @@ section {
 /* --- Responsive --- */
 @media (max-width: 1024px) {
   .features-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
   }
 }
@@ -717,11 +768,18 @@ section {
   /* Features */
   .features-grid {
     grid-template-columns: 1fr;
-    max-width: 400px;
+    max-width: 420px;
     margin: 0 auto;
   }
 
   .feature-card { padding: 2rem 1.5rem; }
+
+  /* Stats */
+  .stats-row {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
 
   /* CTA */
   .cta-card {
@@ -750,6 +808,8 @@ section {
   .section-heading h2 { font-size: 1.35rem; }
 
   .feature-card { padding: 1.75rem 1.25rem; }
+
+  .stat-item { padding: 1.5rem 1rem; }
 
   .cta-card { padding: 2rem 1.25rem; }
 
