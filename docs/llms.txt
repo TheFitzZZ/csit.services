@@ -1,14 +1,14 @@
 # Christoph Süßer IT Dienstleistungen (CSIT)
 
-> IT-Dienstleistungen mit Überblick – Beratung, Cloud, Hosting & individuelle Lösungen aus einer Hand.
+> IT-Dienstleistungen & Beratung für KMU – Cloud, Hosting & individuelle Lösungen aus einer Hand.
 
 ## Über CSIT
 
-Christoph Süßer IT Dienstleistungen ist ein IT-Einzelunternehmen mit Sitz in Deutschland. Christoph Süßer arbeitet als IT-Generalist mit breiter Expertise über verschiedene Plattformen und Technologie-Stacks hinweg. Er arbeitet remote sowie vor Ort im Raum Hamburg, Pinneberg und Itzehoe.
+Christoph Süßer IT Dienstleistungen ist ein IT-Einzelunternehmen mit Sitz in Deutschland. Christoph Süßer arbeitet als IT-Generalist mit breiter Expertise über verschiedene Plattformen und Technologie-Stacks hinweg. Er bietet IT-Beratung speziell für kleine und mittlere Unternehmen (KMU) und arbeitet remote sowie vor Ort im Raum Hamburg, Pinneberg und Itzehoe.
 
 ## Leistungen
 
-- **Beratung & Kommunikation**: Geschäftsanforderungen präzise in technische Spezifikationen übersetzen und bis zur fertigen Lösung begleiten – verständlich, transparent, verbindlich.
+- **Beratung für KMU**: IT-Beratung speziell für kleine und mittlere Unternehmen: Geschäftsanforderungen präzise in technische Spezifikationen übersetzen und bis zur fertigen Lösung begleiten – verständlich, transparent, verbindlich.
 - **Application Hosting**: Betrieb und Optimierung von Anwendungen mit Fokus auf Verfügbarkeit, Performance und proaktives Monitoring.
 - **Cloud & Infrastruktur**: Sichere, skalierbare Architekturen auf Azure, AWS oder On-Premises. Windows- und Linux-Umgebungen, hybride Setups und Infrastructure as Code.
 - **Web Design & Hosting**: Moderne Webauftritte konzipieren, umsetzen und betreiben – pragmatisch, funktional und mit dem richtigen Einsatz aktueller Tools und AI-gestützter Workflows.
